@@ -1,1 +1,7 @@
 node_modules
+
+# So that DB variables and file changes don't interfere with the work of others.
+
+**/config/config.js
+
+**/models/index.js

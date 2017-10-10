@@ -22,6 +22,8 @@ class PostPage extends React.Component {
 
   componentWillMount(){
 
+    console.log(this.props.match.params)
+
     const postId = this.props.match.params.postId;
 
     PostsAPI.grabPostData(postId)

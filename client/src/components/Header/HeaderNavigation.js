@@ -1,5 +1,6 @@
 import React from 'react';
-import PrimaryButton from '../Buttons/PrimaryButton.js'
+import PrimaryButton from '../Buttons/PrimaryButton.js';
+import { Link } from 'react-router-dom'
 
 
 class HeaderNavigation extends React.Component {
@@ -7,13 +8,13 @@ class HeaderNavigation extends React.Component {
     return(
       <ul className="Header-navigation">
         <li>
-          <a href="/region/forsale/category/post/">test post page</a>
+          <Link to="/region/forsale/category/post/">test post page</Link>
         </li>
         <li>
-          <a href="/#">Login</a>
+          <Link to="/#">Login</Link>
         </li>
         <li>
-          <a href="/#">Register</a>
+          <Link to="/#">Register</Link>
         </li>
         <li>
           <PrimaryButton href="/">post an ad</PrimaryButton>
